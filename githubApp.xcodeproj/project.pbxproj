@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F65C499F2C708BD60071B5DB /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C499E2C708BD60071B5DB /* GithubUser.swift */; };
+		F65C49A12C708D970071B5DB /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C49A02C708D970071B5DB /* UserListView.swift */; };
+		F65F46AD2C709154002DEAD7 /* GithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F46AC2C709154002DEAD7 /* GithubModel.swift */; };
+		F65F46AF2C709980002DEAD7 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F46AE2C709980002DEAD7 /* UserView.swift */; };
 		F67D18072C6F93E4003EDFA2 /* githubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67D18062C6F93E4003EDFA2 /* githubAppApp.swift */; };
 		F67D18092C6F93E4003EDFA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67D18082C6F93E4003EDFA2 /* ContentView.swift */; };
 		F67D180B2C6F93E5003EDFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67D180A2C6F93E5003EDFA2 /* Assets.xcassets */; };
 		F67D180E2C6F93E5003EDFA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67D180D2C6F93E5003EDFA2 /* Preview Assets.xcassets */; };
 		F67D18332C6FBF9C003EDFA2 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F67D18322C6FBF9C003EDFA2 /* ComposableArchitecture */; };
+		F67D18362C708A8A003EDFA2 /* UserListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67D18352C708A8A003EDFA2 /* UserListFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F65C499E2C708BD60071B5DB /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
+		F65C49A02C708D970071B5DB /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		F65F46AC2C709154002DEAD7 /* GithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubModel.swift; sourceTree = "<group>"; };
+		F65F46AE2C709980002DEAD7 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		F67D18032C6F93E4003EDFA2 /* githubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67D18062C6F93E4003EDFA2 /* githubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = githubAppApp.swift; sourceTree = "<group>"; };
 		F67D18082C6F93E4003EDFA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F67D180A2C6F93E5003EDFA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F67D180D2C6F93E5003EDFA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F67D18352C708A8A003EDFA2 /* UserListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +44,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F65C499B2C708B980071B5DB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F67D18342C708A71003EDFA2 /* UserList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F65C499C2C708BA30071B5DB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F65F46AB2C709114002DEAD7 /* Model */,
+				F65C499D2C708BB40071B5DB /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F65C499D2C708BB40071B5DB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F65C499E2C708BD60071B5DB /* GithubUser.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F65F46AB2C709114002DEAD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F65F46AC2C709154002DEAD7 /* GithubModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F67D17FA2C6F93E3003EDFA2 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +96,8 @@
 		F67D18052C6F93E4003EDFA2 /* githubApp */ = {
 			isa = PBXGroup;
 			children = (
+				F65C499C2C708BA30071B5DB /* Domain */,
+				F65C499B2C708B980071B5DB /* Presentation */,
 				F67D18062C6F93E4003EDFA2 /* githubAppApp.swift */,
 				F67D18082C6F93E4003EDFA2 /* ContentView.swift */,
 				F67D180A2C6F93E5003EDFA2 /* Assets.xcassets */,
@@ -67,6 +112,16 @@
 				F67D180D2C6F93E5003EDFA2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F67D18342C708A71003EDFA2 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				F67D18352C708A8A003EDFA2 /* UserListFeature.swift */,
+				F65C49A02C708D970071B5DB /* UserListView.swift */,
+				F65F46AE2C709980002DEAD7 /* UserView.swift */,
+			);
+			path = UserList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +201,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F67D18092C6F93E4003EDFA2 /* ContentView.swift in Sources */,
+				F65C49A12C708D970071B5DB /* UserListView.swift in Sources */,
+				F65C499F2C708BD60071B5DB /* GithubUser.swift in Sources */,
+				F67D18362C708A8A003EDFA2 /* UserListFeature.swift in Sources */,
+				F65F46AD2C709154002DEAD7 /* GithubModel.swift in Sources */,
 				F67D18072C6F93E4003EDFA2 /* githubAppApp.swift in Sources */,
+				F65F46AF2C709980002DEAD7 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -262,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
