@@ -23,6 +23,7 @@
 		F67D18362C708A8A003EDFA2 /* UserListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67D18352C708A8A003EDFA2 /* UserListFeature.swift */; };
 		F6F7A9FB2C719B2A00E7D063 /* UserDetailProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7A9FA2C719B2A00E7D063 /* UserDetailProfileView.swift */; };
 		F6F7A9FD2C719D3500E7D063 /* UserDetailRepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7A9FC2C719D3500E7D063 /* UserDetailRepositoryView.swift */; };
+		F6F7AA002C71A20D00E7D063 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7A9FF2C71A20D00E7D063 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F67D18352C708A8A003EDFA2 /* UserListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListFeature.swift; sourceTree = "<group>"; };
 		F6F7A9FA2C719B2A00E7D063 /* UserDetailProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailProfileView.swift; sourceTree = "<group>"; };
 		F6F7A9FC2C719D3500E7D063 /* UserDetailRepositoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepositoryView.swift; sourceTree = "<group>"; };
+		F6F7A9FF2C71A20D00E7D063 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		F65C499B2C708B980071B5DB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F6F7A9FE2C71A1F900E7D063 /* Web */,
 				F65F46B02C709FB2002DEAD7 /* UserDetail */,
 				F67D18342C708A71003EDFA2 /* UserList */,
 			);
@@ -150,6 +153,14 @@
 			path = UserList;
 			sourceTree = "<group>";
 		};
+		F6F7A9FE2C71A1F900E7D063 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				F6F7A9FF2C71A20D00E7D063 /* WebView.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,6 +250,7 @@
 				F65F46B62C70B7F7002DEAD7 /* GIthubUserDetail.swift in Sources */,
 				F65F46AF2C709980002DEAD7 /* UserView.swift in Sources */,
 				F65F46B82C70BB05002DEAD7 /* UserDetailView.swift in Sources */,
+				F6F7AA002C71A20D00E7D063 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
