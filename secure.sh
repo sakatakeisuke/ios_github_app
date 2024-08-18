@@ -11,7 +11,7 @@ echo """
 import Foundation
 
 struct Secure {
-    static let token = \"{$token}\"
+    static let token = \"$token\"
 }
 """ > ./githubApp/Secure.swift
 
