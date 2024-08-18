@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60246C92C7253860071ED36 /* Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60246C82C7253860071ED36 /* Secure.swift */; };
 		F65518242C71DBC3001F3C5A /* StateFulWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65518232C71DBC3001F3C5A /* StateFulWebView.swift */; };
 		F65518262C71DBFF001F3C5A /* StateFulWebFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65518252C71DBFF001F3C5A /* StateFulWebFeature.swift */; };
 		F655182A2C71E907001F3C5A /* GithubRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65518292C71E907001F3C5A /* GithubRepositoryImpl.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60246C82C7253860071ED36 /* Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secure.swift; sourceTree = "<group>"; };
 		F65518232C71DBC3001F3C5A /* StateFulWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateFulWebView.swift; sourceTree = "<group>"; };
 		F65518252C71DBFF001F3C5A /* StateFulWebFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateFulWebFeature.swift; sourceTree = "<group>"; };
 		F65518292C71E907001F3C5A /* GithubRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryImpl.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				F65C499B2C708B980071B5DB /* Presentation */,
 				F67D180A2C6F93E5003EDFA2 /* Assets.xcassets */,
 				F67D180C2C6F93E5003EDFA2 /* Preview Content */,
+				F60246C82C7253860071ED36 /* Secure.swift */,
 			);
 			path = githubApp;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				F65F46B82C70BB05002DEAD7 /* UserDetailView.swift in Sources */,
 				F65518362C71F90E001F3C5A /* GithubRepositoryResponse.swift in Sources */,
 				F655182F2C71EA4E001F3C5A /* APIRequest.swift in Sources */,
+				F60246C92C7253860071ED36 /* Secure.swift in Sources */,
 				F6F7AA002C71A20D00E7D063 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

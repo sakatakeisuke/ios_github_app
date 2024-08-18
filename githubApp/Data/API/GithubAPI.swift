@@ -9,7 +9,7 @@ import Foundation
 
 enum GithubAPI {
     private var baseURL: String { "https://api.github.com" }
-    private var token: String { "" }
+    private var token: String { Secure.token }
     
     case users(word: String)
     case user(name: String)
