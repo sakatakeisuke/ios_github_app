@@ -12,7 +12,7 @@ struct UserView: View {
     
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: user.userImageURL), content: { image in
+            AsyncImage(url: URL(string: user.imageURL), content: { image in
                 image.resizable()
             }) {
                 Image(systemName: "person")
@@ -30,5 +30,5 @@ struct UserView: View {
 }
 
 #Preview {
-    UserView(user: .init(id: 1, name: "sakatakeisuke", userImageURL: "https://avatars.githubusercontent.com/u/112773764?v=4"))
+    UserView(user: .init(id: 1, name: "sakatakeisuke", imageURL: "https://avatars.githubusercontent.com/u/112773764?v=4"))
 }

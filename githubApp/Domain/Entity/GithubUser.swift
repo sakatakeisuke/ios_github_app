@@ -10,5 +10,5 @@ import Foundation
 struct GithubUser: Equatable {
     let id: Int
     let name: String
-    let userImageURL: String
+    let imageURL: String
 }

@@ -23,7 +23,7 @@ struct UserListFeature {
         /// 画面表示
         case onAppear
         /// ユーザー一覧取得
-        case fetchUserResponse(_ users: [GithubUser])
+        case fetchUsersResponse(_ users: [GithubUser])
         /// ユーザーをタップ
         case userTapped
     }
@@ -35,9 +35,9 @@ struct UserListFeature {
                 return .run { send in
                     let users = try? await model.fetchUserList()
                     // エラーの場合は0件とみなす
-                    await send(.fetchUserResponse(users ?? []))
+                    await send(.fetchUsersResponse(users ?? []))
                 }
-            case .fetchUserResponse(let users):
+            case .fetchUsersResponse(let users):
                 state.users = users
                 return .none
             case .userTapped:
