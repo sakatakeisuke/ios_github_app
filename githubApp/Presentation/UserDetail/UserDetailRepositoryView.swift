@@ -12,19 +12,30 @@ struct UserDetailRepositoryView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text(repo.name)
-                    .font(.title)
-                    .fontWeight(.bold)
-                Text(repo.usedLanguage)
+            VStack {
                 HStack {
+                    Text(repo.name)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding(.init(top: 0, leading: 40, bottom: 0, trailing: 40))
+                        .lineLimit(2)
+                    Spacer()
+                }
+                HStack {
+                    Text(repo.usedLanguage)
+                        .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 10))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(lineWidth: 1)
+                                .fill(.black)
+                        }
+                        .padding(.init(top: 0, leading: 40, bottom: 0, trailing: 0))
                     Image(systemName: "star.circle")
                     Text("×\(repo.starCount)")
                         .padding(.init(top: 0, leading: -10, bottom: 0, trailing: 0))
+                    Spacer()
                 }
-                Spacer()
             }
-            .padding(.init(top: 0, leading: 20, bottom: 0, trailing: 0))
             HStack {
                 Text(repo.description)
                     .padding(.init(top: 0, leading: 40, bottom: 0, trailing: 0))
