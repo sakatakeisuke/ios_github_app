@@ -10,7 +10,7 @@ import Foundation
 struct GithubRepository: Equatable {
     let id: Int
     let name: String
-    let usedLanguage: String
+    let usedLanguage: String?
     let starCount: Int
     let description: String
     let transitionURL: String
