@@ -33,7 +33,7 @@ struct UserDetailView: View {
 }
 
 #Preview {
-    UserDetailView(store: Store(initialState: UserDetailFeature.State(userName: "sakatakeisuke")) {
+    UserDetailView(store: Store(initialState: UserDetailFeature.State(userName: "A")) {
         UserDetailFeature()
     })
 }
