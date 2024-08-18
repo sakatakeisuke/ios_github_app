@@ -7,20 +7,20 @@
 
 import SwiftUI
 import WebKit
+import ComposableArchitecture
 
 struct WebView: UIViewRepresentable {
-    let loadURL: URL?
+    let loadURL: URL
     
     func makeUIView(context: Context) -> WKWebView {
         return WKWebView()
     }
     
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        guard let url = loadURL else { return }
-        uiView.load(.init(url: url))
+        uiView.load(.init(url: loadURL))
     }
 }
 
 #Preview {
-    WebView(loadURL: .init(string: "https://google.com"))
+    WebView(loadURL: .init(string: "https://google.com")!)
 }

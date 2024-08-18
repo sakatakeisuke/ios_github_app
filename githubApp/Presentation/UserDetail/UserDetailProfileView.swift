@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserDetailProfileView: View {
-    let userDetail: GIthubUserDetail?
+    let userDetail: GithubUserDetail?
     
     var body: some View {
         HStack {

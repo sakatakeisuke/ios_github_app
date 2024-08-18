@@ -11,7 +11,7 @@ import ComposableArchitecture
 struct ContentView: View {
     var body: some View {
         UserListView(store: Store(initialState: UserListFeature.State()){
-            UserListFeature(model: GithubModel())
+            UserListFeature()
         })
     }
 }

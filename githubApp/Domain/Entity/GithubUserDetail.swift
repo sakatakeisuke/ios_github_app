@@ -1,5 +1,5 @@
 //
-//  GIthubUserDetail.swift
+//  GithubUserDetail.swift
 //  githubApp
 //
 //  Created by Sakata Keisuke on 2024/08/17.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GIthubUserDetail: Equatable {
+struct GithubUserDetail: Equatable {
     let name: String
     let imageURL: String
     let fullName: String

@@ -39,5 +39,6 @@ struct UserDetailRepositoryView: View {
     UserDetailRepositoryView(repo: .init(id: 1, name: "repo1",
                                          usedLanguage: "swift",
                                          starCount: 100,
-                                         description: "This is Sample Repository XXXXXXXXXXXXXX"))
+                                         description: "This is Sample Repository XXXXXXXXXXXXXX", 
+                                         transitionURL: "https://github.com/sakatakeisuke/ios_github_app"))
 }

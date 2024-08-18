@@ -13,4 +13,5 @@ struct GithubRepository: Equatable {
     let usedLanguage: String
     let starCount: Int
     let description: String
+    let transitionURL: String
 }
