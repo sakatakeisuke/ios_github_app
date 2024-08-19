@@ -13,12 +13,13 @@ struct StateFulWebFeature {
     
     struct Dependencies {
         let initialUrl: URL
+        let title: String
     }
     
     @ObservableState
     struct State {
-        init(url: URL) {
-            self.dependencies = Dependencies(initialUrl: url)
+        init(url: URL, title: String) {
+            self.dependencies = Dependencies(initialUrl: url, title: title)
         }
         let dependencies: Dependencies
     }

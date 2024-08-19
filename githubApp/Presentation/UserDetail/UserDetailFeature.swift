@@ -47,7 +47,7 @@ struct UserDetailFeature {
         /// ユーザー詳細とリポジトリ一覧取得
         case fetchDetailAndRepositoryResponse(_ prm: (detail: GithubUserDetail?, repos: [GithubRepository]))
         /// リポジトリをタップ
-        case repositoryTapped((url: URL, id: Int))
+        case repositoryTapped((url: URL, repo: GithubRepository))
         /// 画面遷移アクション
         case destination(PresentationAction<Destination.Action>)
     }
@@ -67,9 +67,10 @@ struct UserDetailFeature {
                 state.repositories = prm.repos
                 return .none
             case .repositoryTapped(let prm):
-                let (url, id) = prm
-                state.selectedRepositoryID = id
-                state.destination = .web(StateFulWebFeature.State(url: url))
+                let (url, repo) = prm
+                state.selectedRepositoryID = repo.id
+                let title = state.dependencies.userName + "/" + repo.name
+                state.destination = .web(StateFulWebFeature.State(url: url, title: title))
                 return .none
             case .destination:
                 return .none

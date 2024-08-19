@@ -20,12 +20,14 @@ struct UserDetailView: View {
                                check: { store.selectedRepositoryID == repo.id },
                                onNavigate: { _ in
                     guard let url = URL(string: repo.transitionURL) else { return }
-                    store.send(.repositoryTapped((url: url, id: repo.id)))
+                    store.send(.repositoryTapped((url: url, repo: repo)))
                 }, destination: { store in StateFulWebView(store: store) }) {
                     UserDetailRepositoryView(repo: repo)
                 }
             }
         }
+        .navigationTitle(store.dependencies.userName)
+        .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             store.send(.onAppear)
         }
